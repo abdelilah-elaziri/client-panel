@@ -1,5 +1,6 @@
 import './App.css';
 import Contact from './components/contacts/Contact';
+import Navbar from './components/navbar/Navbar';
 
 function App() {
 
@@ -9,10 +10,11 @@ function App() {
   
   return (
     <div className="App">
-      <h1>Hello React.Js First Code</h1>
-      
+      <Navbar title="contact title"/>
       <Contact/>
-      <Contact/>
+      <Contact name="abdelilah" phone="0612345678" email="abdelilahelaziri9@gmail.com"/>
+      <Contact name="elaziri" phone="0512345679" email="abdelilahelaziri6@gmail.com"/>
+      <Contact name="abdelilahelaziri" phone="012345610" email="abdelilahelaziri96@gmail.com"/>
       
     </div>
   );

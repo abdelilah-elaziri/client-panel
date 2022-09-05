@@ -2,16 +2,26 @@ import React, { Component } from 'react'
 
 class Contact extends Component {
   render() {
+
+    const { name, phone, email } = this.props;
+
     return (
       <div>
-         <h1>Contacts</h1>
+         <h1>contacts : {name}</h1>
          <ul>
-            <li>Name: abdelilah ELAZIRI</li>
-            <li>Email: abdelilahelaziri96@gmail.com</li>
+            <li>Phone: {phone}</li>
+            <li>Email: {email}</li>
          </ul>
       </div>
     )
   }
+}
+
+Contact.defaultProps = {
+  name : "My Name",
+  phone : "0000000000",
+  email : "Email",
+
 }
 
 export default Contact;
